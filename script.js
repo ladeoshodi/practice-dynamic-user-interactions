@@ -57,3 +57,5 @@ function handleMoveToPrevSlide() {
 
 nextButton.addEventListener("click", handleMoveToNextSlide);
 prevButton.addEventListener("click", handleMoveToPrevSlide);
+
+// todo autoslider
