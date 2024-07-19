@@ -54,8 +54,15 @@ function handleMoveToPrevSlide() {
   dots[position].checked = true;
 }
 
-
 nextButton.addEventListener("click", handleMoveToNextSlide);
 prevButton.addEventListener("click", handleMoveToPrevSlide);
 
-// todo autoslider
+// Auto slider
+const carousel = document.querySelector(".carousel");
+let intervalID;
+carousel.addEventListener("mouseenter", () => {
+  intervalID = setInterval(handleMoveToNextSlide, 2000);
+});
+carousel.addEventListener("mouseleave", () => {
+  clearInterval(intervalID);
+});
