@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.row.one {
+    background-color: #6c6ce5;
+    color: white;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    padding: 22px 25px;
+    background-color: #2b2424;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    background-color: #7e7676;
+}
+
+.row.two {
+    justify-content: end;
+    background-color: #2b2424;
+    color: white;
+}
+
+.menu-links li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+    padding-right: 17%;
+}
+
+.hidden {
+    display: none;
+}

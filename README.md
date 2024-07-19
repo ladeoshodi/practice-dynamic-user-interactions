@@ -1,1 +1,5 @@
-# practice-dynamic-user-interactions
+# Practice Dynamic User Interactions
+
+### Interactions
+- dropdown menu
+- image carousel
