@@ -24,34 +24,36 @@
         </div>
     </nav>
 
-    <section class="carousel-container">
-        <h1>Practice Image Carousel</h1>
-        <div id="carousel-1" class="carousel">
-            <h2 id="carousel-1-title">Holiday destinations</h2>
-            <div class="slide">
-                <div class="slide-content">
-                    <h3 id="carousel-1-slide-1-title" class="slide-caption">Japan</h3>
-                    <img src="https://images.unsplash.com/photo-1526112546639-3d51f3310382?q=80&w=2866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Japan Temple" >
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <h3 id="carousel-1-slide-2-title" class="slide-caption">Bali</h3>
-                    <img src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali Temple" >
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <h3 id="carousel-1-slide-3-title" class="slide-caption">Morocco</h3>
-                    <img src="https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morocco Blue City" >
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <h3 id="carousel-1-slide-4-title" class="slide-caption">Turkey</h3>
-                    <img src="https://images.unsplash.com/photo-1526048598645-62b31f82b8f5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Turkey Hot Air Balloon" >
-                </div>
-            </div>
+    <section class="carousel">
+        <h1 id="carousel-title">Holiday destinations</h1>
+        <div class="slide slide-visible">
+            <h3 id="slide-1-caption" class="slide-caption">Japan</h3>
+            <img src="https://images.unsplash.com/photo-1526112546639-3d51f3310382?q=80&w=2866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Japan Temple" >
+        </div>
+        <div class="slide">
+            <h3 id="slide-2-caption" class="slide-caption">Bali</h3>
+            <img src="https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali" >
+        </div>
+        <div class="slide">
+            <h3 id="slide-3-title" class="slide-caption">Morocco</h3>
+            <img src="https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morocco Blue City" >
+        </div>
+        <div class="slide">
+            <h3 id="slide-4-title" class="slide-caption">Turkey</h3>
+            <img src="https://images.unsplash.com/photo-1526048598645-62b31f82b8f5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Turkey Hot Air Balloon" >
+        </div>
+        <div class="carousel-actions">
+            <button id="slide-button-prev" aria-label="Previous">
+                <i class="fa-solid fa-circle-left"></i>
+            </button>
+            <button id="slide-button-next" aria-label="Next">
+                <i class="fa-solid fa-circle-right"></i>
+            </button>
+        </div>
+        <div class="carousel-dots">
+            <input class="dot selected-dot" type="radio" name="dot" checked >
+            <input class="dot" type="radio" name="dot" >
+            <input class="dot" type="radio" name="dot" >
         </div>
     </section>  
 </body>
